@@ -1,0 +1,322 @@
+/*цвет основного текста #212121*/
+/*вторичный цвет текста #757575*/
+/*третья палитра текста rgba(255, 255, 255, 0.6);*/
+/*белый #ffffff;*/
+/*акцент #2196F3*/
+/* вторичный цвет фона  #2F303A*/
+/* третья палитра фона #F5F4FA */
+/* вторичный цвет основной кнопки #188CE8 */
+/* цвет фона под карточками #C4C4C4 */
+
+:root {
+  --primary-text-color: #212121;
+  --text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --text-logo: #000000;
+  --primary-background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --min-background-color: #f5f4fa;
+  --btn-hover-bg: #188ce8;
+  --card-border: #eeeeee;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/*==========HEADER==========*/
+.logo {
+  color: var(--text-logo);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo.accent {
+  color: var(--accent-color);
+}
+
+.site-nav .logo-title {
+  color: var(--text-logo);
+}
+
+.link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.link:hover,
+:focus {
+  color: var(--accent-color);
+}
+.site-nav .contact {
+  color: var(--text-color);
+}
+/*========== END HEADER==========*/
+
+/*========== HERO==========*/
+.section.hero {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hero {
+  text-align: center;
+  background-color: var(--second-background-color);
+  color: var(--white-text-color);
+}
+.hero-title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*========== END HERO==========*/
+
+/*========== BUTTON==========*/
+.button {
+  font-family: 'Roboto', sans-serif;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--min-background-color);
+  cursor: pointer;
+}
+.button.primary {
+  min-width: 200px;
+  padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button.secondary {
+  min-width: 73px;
+  padding: 6px 22px;
+  /* margin-bottom: 34px; */
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--btn-hover-bg);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+/*========== END BUTTON==========*/
+
+/*========== HIDDEN==============*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*========== END HIDDEN==============*/
+
+/* ==========SECTION=================*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* ==========END SECTION=================*/
+
+/*========== SECTION ABOUT==========*/
+.section.about {
+  padding-bottom: 47px;
+}
+.title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.title.centered {
+  text-align: center;
+}
+.features-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.text {
+  color: var(--text-color);
+}
+.features.text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*==========  END SECTION ABOUT==========*/
+
+/* ============END WORK===================== */
+.section.work {
+  padding-top: 47px;
+}
+
+/*========== SECTION TEAM==========*/
+.team {
+  background-color: var(--min-background-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-card {
+  margin-bottom: 30px;
+}
+
+.team-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+}
+
+/*========== END SECTION TEAM==========*/
+
+/*========== SECTION PROJECT==========*/
+.link-project {
+  display: block;
+  margin-top: 34px;
+  margin-bottom: 20px;
+
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.container-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-top: none;
+  width: 370px;
+  /* padding: 90px 24px 20px 24px; */
+}
+.container-title-project {
+  padding: 20px 24px;
+}
+.project.title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project.text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+/*========== END SECTION PROJECT==========*/
+
+/*========== FOOTER==========*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--second-background-color);
+}
+
+.footer .logo-title {
+  color: var(--white-text-color);
+}
+.footer .address {
+  color: var(--white-text-color);
+}
+
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.list.contacts {
+  margin-top: 20px;
+}
+
+.contact.link.item {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.contact {
+  color: var(--contact-footer-color);
+}
+/*========== END FOOTER==========*/
