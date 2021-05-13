@@ -20,19 +20,19 @@
     <!--Шапка сайта-->
 
     <header>
-        <div class="container">
+        <div class="container border-header">
         <nav class="site-nav">
             <a href="./index.html" class="logo accent">Web<span class="logo-title">Studio</span></a>
-            <ul class="list">
-                <li><a href="" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+            <ul class="list navigation">
+                <li class="item"><a href="" class="link current">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
         
         <ul class="site-nav list">
-            <li><a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
@@ -41,8 +41,8 @@
         <!--Герой-->
         <section class="section hero">
             <div class="container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+              <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+              <button type="button" class="button primary">Заказать услугу</button>
             </div>
         </section>
 
@@ -51,19 +51,19 @@
             <div class="container">
             <h2  class="title visually-hidden">Наши особенности</h2>
             <ul class="features list">
-                <li>
+                <li class="item-about">
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item-about">
                     <h3 class="features-title">Пунктуальность</h3>
                     <p class="features text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="item-about">
                     <h3 class="features-title">Планирование</h3>
                     <p class="features text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="item-about">
                     <h3 class="features-title">Современные технологии</h3>
                     <p class="features text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -75,13 +75,13 @@
         <section class="section work">
             <div class="container">
             <h2 class="title centered">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./images/about/about-img-1.jpg" alt="программист работает за столом в офисе"
+            <ul class="list work-card">
+                <li class="item-work"><img src="./images/about/about-img-1.jpg" alt="программист работает за столом в офисе"
                         width="370" height="294"></li>
-                <li><img src="./images/about/about-img-2.jpg"
+                <li class="item-work"><img src="./images/about/about-img-2.jpg"
                         alt="веб-дизайнер разработчик приложений для смартфонов рабочий интерфейс мобильные телефоны"
                         width="370" height="294"></li>
-                <li><img src="./images/about/about-img-3.jpg"
+                <li class="item-work"><img src="./images/about/about-img-3.jpg"
                         alt="креативный веб-дизайнер с рабочим выбором цвета графическим планшетом" width="370"
                         height="294"></li>
             </ul>
@@ -92,26 +92,37 @@
         <section class="section team">
             <div class="container">
             <h2 class="title centered">Наша команда</h2>
-            <ul class="list">
-
-                <li><img class="team-card" src="./images/team/team-card-1-img.jpg" alt="фото члена команды игоря демьяненко"
+            <ul class="list team-location">
+                <li class="location"><div class="container-team"><img class="team-card" src="./images/team/team-card-1-img.jpg" alt="фото члена команды игоря демьяненко"
                         width="270">
-                    <h3 class="team-title">Игорь Демьяненко</h3>
-                    <p lang="en" class="team text">Product Designer</p>
+                      <div class="container-title-team">
+                        <h3 class="description team-title">Игорь Демьяненко</h3>
+                        <p lang="en" class="description team-text">Product Designer</p>
+                      </div>
+                    </div>
                 </li>
-                <li><img class="team-card" src="./images/team/team-card-2-img.jpg" alt="фото члена команды ольги репиной" width="270">
-                    <h3 class="team-title">Ольга Репина</h3>
-                    <p lang="en" class="team text">Frontend Developer</p>
+                <li class="location"><div class="container-team"><img class="team-card" src="./images/team/team-card-2-img.jpg" alt="фото члена команды ольги репиной" width="270">
+                    <div class="container-title-team">
+                        <h3 class="description team-title">Ольга Репина</h3>
+                        <p lang="en" class="description team-text">Frontend Developer</p>
+                    </div>
+                    </div>
                 </li>
-                <li><img class="team-card" src="./images/team/team-card-3-img.jpg" alt="фото члена команды николая тарасова"
+                <li class="location"><div class="container-team"><img class="team-card" src="./images/team/team-card-3-img.jpg" alt="фото члена команды николая тарасова"
                         width="270">
-                    <h3 class="team-title">Николай Тарасов</h3>
-                    <p lang="en" class="team text">Marketing</p>
+                      <div class="container-title-team">
+                        <h3 class="description team-title">Николай Тарасов</h3>
+                        <p lang="en" class="description team-text">Marketing</p>
+                      </div>
+                    </div>
                 </li>
-                <li><img class="team-card" src="./images/team/team-card-4-img.jpg" alt="фото члена команды михаила ермакова"
+                <li class="location"><div class="container-team"><img class="team-card" src="./images/team/team-card-4-img.jpg" alt="фото члена команды михаила ермакова"
                         width="270">
-                    <h3 class="team-title">Михаил Ермаков</h3>
-                    <p lang="en" class="team text">UI Designer</p>
+                      <div class="container-title-team">
+                        <h3 class="description team-title">Михаил Ермаков</h3>
+                        <p lang="en" class="description team-text">UI Designer</p>
+                      </div>
+                    </div>
                 </li>
             </ul>
             </div>
